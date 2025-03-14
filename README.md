@@ -1,5 +1,5 @@
-Audiovisual User Experience for Music Streaming Platforms
-In progress project for Rochester Institute of Technology Master's Program
+**Audiovisual User Experience for Music Streaming Platforms
+**In progress project for Rochester Institute of Technology Master's Program
 
 
 Project Description Abstract:

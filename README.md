@@ -20,7 +20,7 @@ aims to enhance the user’s enjoyment of music through popular streaming platfo
 contribution in the evolution of the online music industry.
 
 
-Run Instructions:
--Install requirements : "pip install -r requirements.txt"
--Pull ollama model gemma3:4b : "ollama run gemma3:4b"
--Download and run local Stable Diffusion model (Stable Diffusion 1.5-pruned-emaonly was used in development)
+Run Instructions: <br/>
+-Install requirements : "pip install -r requirements.txt" <br/>
+-Pull ollama model gemma3:4b : "ollama run gemma3:4b" <br/>
+-Download and run local Stable Diffusion model (Stable Diffusion 1.5-pruned-emaonly was used in development) <br/>

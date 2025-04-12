@@ -18,3 +18,9 @@ and documentation that will give insight into the project development as well as
 the product will enhance the overall user experience of popular streaming platforms. The project
 aims to enhance the user’s enjoyment of music through popular streaming platforms and be a
 contribution in the evolution of the online music industry.
+
+
+Run Instructions:
+-Install requirements : "pip install -r requirements.txt"
+-Pull ollama model gemma3:4b : "ollama run gemma3:4b"
+-Download and run local Stable Diffusion model (Stable Diffusion 1.5-pruned-emaonly was used in development)

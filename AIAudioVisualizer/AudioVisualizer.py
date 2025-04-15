@@ -20,12 +20,14 @@ pygame.mixer.init()
 
 frame = Frame(window)
 
-c = Canvas(frame, bg="black", width=1280, height=635)
+c = Canvas(frame, bg="black", width=960, height=635)
+
 song_display = Listbox(frame, bg="black", fg="white", width=30, height=37)
 song_display.grid(row=0,column=0, padx=5)
 c.grid(row=0,column=1,padx=5)
 
 frame.pack()
+
 
 #Music object class containing list of songs loaded, the current song, and whether music is paused
 class MusicObj:
@@ -37,6 +39,7 @@ music_obj = MusicObj
 
 #Allow user to choose a playlist/folder of music to load into program
 def load_music():
+    c.delete("all")
     window.directory = filedialog.askdirectory()
     for song in os.listdir(window.directory):
         name, ext = os.path.splitext(song)
@@ -55,6 +58,7 @@ window.config(menu=toolbar)
 fileMenu = Menu(toolbar, tearoff=False)
 fileMenu.add_command(label="Select", command=load_music)
 toolbar.add_cascade(label="File",menu=fileMenu)
+c.create_text(960/2, 635/2, text="Select song folder using 'File' menu", fill="white", anchor="center")
 
 #Image class containing image file information,list of created images, and creation of image in tkinter canvas
 class Image:
@@ -89,6 +93,8 @@ def check_end():
 def play_music():
     if not music_obj.paused:
         pygame.mixer.music.load(os.path.join(window.directory, music_obj.curr_song))
+        c.create_text(c.winfo_width()/2,c.winfo_height()/2,text="generating...", fill = "white", anchor="center")
+        c.update()
         pygame.mixer.music.play()
         while not check_end() and not music_obj.paused:
             display_img()
@@ -163,7 +169,6 @@ def prompt_ai():
     api_response = requests.post(url=url, json=payload)
     r = api_response.json()
 
-    #time_str = time.strftime("%Y%m%d_%H%M%S")
     save_path = os.path.join(os.getcwd()+'/img_outputs', "output.png")
     with open(save_path, 'wb') as f:
         f.write(base64.b64decode(r['images'][0]))

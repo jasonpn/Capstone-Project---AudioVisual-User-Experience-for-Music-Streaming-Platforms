@@ -1,5 +1,5 @@
 # Audiovisual User Experience for Music Streaming Platforms
-## Capstone project for Rochester Institute of Technology Master's Program
+Capstone project for Rochester Institute of Technology Master's Program
 
 
 ### Project Description Abstract:

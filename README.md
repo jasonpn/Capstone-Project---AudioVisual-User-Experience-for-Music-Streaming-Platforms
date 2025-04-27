@@ -1,8 +1,8 @@
-#Audiovisual User Experience for Music Streaming Platforms
-##Capstone project for Rochester Institute of Technology Master's Program
+# Audiovisual User Experience for Music Streaming Platforms
+## Capstone project for Rochester Institute of Technology Master's Program
 
 
-###Project Description Abstract:
+### Project Description Abstract:
 
 The current music industry has already made its massive move to online streaming
 platforms which now dominate the online audio space. Within its move, the online streaming
@@ -20,7 +20,7 @@ aims to enhance the user’s enjoyment of music through popular streaming platfo
 contribution in the evolution of the online music industry.
 
 
-###Run Instructions (Developed on MacOS): <br/>
+### Run Instructions (Developed on MacOS): <br/>
 -Install requirements : `pip install -r requirements.txt` <br/>
 -Pull ollama model gemma3:4b : `ollama run gemma3:4b` (If using a different model, change model parameter in AudioVisualizer.py to the model name) <br/>
 -Download Stable Diffusion model ([Stable Diffusion 1.5-pruned-emaonly](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) was used in development). <br/>

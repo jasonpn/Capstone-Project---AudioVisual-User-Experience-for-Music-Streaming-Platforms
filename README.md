@@ -22,7 +22,7 @@ contribution in the evolution of the online music industry.
 
 ### Run Instructions (Developed on MacOS): <br/>
 -Install requirements : `pip install -r requirements.txt` <br/>
--Pull ollama model gemma3:4b : `ollama run gemma3:4b` (If using a different model, change model parameter in AudioVisualizer.py to the model name) <br/>
+-Pull and run ollama model gemma3:4b : `ollama run gemma3:4b` (If using a different model, change `model` parameter in AudioVisualizer.py to the model name) <br/>
 -Download Stable Diffusion model ([Stable Diffusion 1.5-pruned-emaonly](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) was used in development). <br/>
 -Install [AUTOMATIC1111 Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui). <br/>
 -Run Stable Diffusion WebUI using `./webui.sh --api` on Mac, or `/webui.sh --api` on Linux. <br/>

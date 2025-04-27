@@ -9,7 +9,7 @@ import base64
 #import time
 
 #Setup
-url = 'http://127.0.0.1:7860/sdapi/v1/txt2img'
+url = 'http://127.0.0.1:7860/sdapi/v1/txt2img' #local url of stable diffusion webui
 client = ollama.Client()
 model = "gemma3:4b" #change name if using different model
 window = Tk()

@@ -11,7 +11,7 @@ import base64
 #Setup
 url = 'http://127.0.0.1:7860/sdapi/v1/txt2img'
 client = ollama.Client()
-model = "gemma3:4b"
+model = "gemma3:4b" #change name if using different model
 window = Tk()
 window.title("Audio Visualizer")
 window.geometry("1280x720")
@@ -133,7 +133,7 @@ def prev_music():
         song_display.selection_set(music_obj.songs.index(music_obj.curr_song) - 1)
         music_obj.curr_song=music_obj.songs[song_display.curselection()[0]]
         play_music()
-    except:
+    except: 
         pass
 
 #Create control buttons

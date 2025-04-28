@@ -38,8 +38,8 @@ Running: <br/>
 
 ### Credit <br/>
 
-AUTOMATIC1111 WebUI
-Stable Diffusion
-Ollama
-Gemma 3
+AUTOMATIC1111 WebUI <br/>
+Stable Diffusion <br/>
+Ollama <br/>
+Google Gemma 3 <br/>
 
